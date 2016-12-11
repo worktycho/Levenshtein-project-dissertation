@@ -1,2 +1,14 @@
 \section{Sublinear Approach}
+\label{sec:sublinear}
+
+\begin{itemize}
+	\item The sublinear approach is based on the ability to construct suffix trees in linear time. The paper uses McCreights algorithm, but the Ukkonen algorthm may be preferable.
+	\item The sublinear approach uses the suffix trees to work out sections of text that can match the pattern.
+	\item This approach provides linear time matching amortized, and significant amounts of the work are only dependent on the pattern.
+	\item The pattern is compiled to a set of matching statistics.
+	\item These charicteristics are preferable for regexs because it enables easy integration with a backtracking regex algorithm.
+	\item The regex engine will identify positions that the regex chunk preceding the pattern can match to, which this algorithm can then match or not.
+	\item This requires an algorithm that can rapidly match from multiple non-contigous starting positions in a string.
+	\item When the levenstien pattern starts the whole pattern, a matrix based whole string matching algorithm may be more apropriate, but that is O(mn), so may be slower.
+\end{itemize}
 \cite{Chang1994}

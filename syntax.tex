@@ -1,5 +1,13 @@
-\section{syntax}
+\section{syntax and semantics}
+\label{sec:syntax}
 \begin{itemize}
+	\item talk about the actual syntax \lstinline{<foo>3}
+	\begin{itemize}
+		\item The angle braces `<` are not used. so are free to use
+		\item the biggest problem with this syntax is that there is no way of telling where the levenstien distence token ends. - consider syntax \lstinline{<foo>{3}}.
+		\item alternatively leave it, as there is always the workaround of using a single element charicter class to terminate the token. (Impotance of unambigous grammar?)
+	\end{itemize}
+	\item Ability to specify optional non-greedyness
 	\item greedyness - pick longest
 	\item matching closness - pick closest, prioatise over length.
 	\item interaction with other operators - rematch on repation.

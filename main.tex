@@ -3,12 +3,23 @@
 \usepackage[a4paper, margin=2cm]{geometry}
 \usepackage{tabularx}
 \usepackage{amsmath}
+\usepackage{listings}
 
+% start playing around with implementing suffix tree based levenstien matching algorithms in C
 
 \begin{document}
-\include{naive-approach}
+\include{introduction}
+\include{motivating}
+\include{problem}
 \include{syntax}
+\include{background}
+\include{naive-approach}
 \include{sublinear-approach}
+\include{implementation}
+\include{evaluation}
+\include{related-work}
+\include{conclusion}
+\nocite{*}
 \bibliography{bibliography}{}
 \bibliographystyle{plain}
 \end{document}
